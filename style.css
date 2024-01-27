@@ -8,17 +8,7 @@ html {
 }
 
 body {
-  // <uniquifier>: Use a uniquifier for the class name
-  // <weight>: Use a value from 100 to 900
-
-  .noto-serif-<uniquifier > {
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  }
-
+  font-family: "Noto Serif", serif;
   /*SkyBlue Background*/
   background-color: #e0ffff;
   font-size: 10pt;
@@ -939,65 +929,4 @@ video::-webkit-media-controls-fullscreen-volume-min-button {
 audio::-webkit-media-controls-fullscreen-volume-max-button,
 video::-webkit-media-controls-fullscreen-volume-max-button {
   display: none;
-}
-video::-webkit-media-text-track-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-bottom: 5px;
-  font: 22px sans-serif;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0;
-  text-decoration: none;
-  pointer-events: none;
-  -webkit-user-select: none;
-  word-break: break-word;
-  flex: 1 1;
-}
-video::cue {
-  display: inline;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2px 2px;
-}
-video::-webkit-media-text-track-region {
-  position: absolute;
-  line-height: 5.33vh;
-  writing-mode: horizontal-tb;
-  background: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 1);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  overflow: hidden;
-}
-video::-webkit-media-text-track-region-container {
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  flex-direction: column;
-}
-video::-webkit-media-text-track-region-container.scrolling {
-  transition: top 433ms linear;
-}
-video::-webkit-media-text-track-display {
-  position: absolute;
-  overflow: hidden;
-  white-space: pre-wrap;
-  -webkit-box-sizing: border-box;
-  flex: 0 0 auto;
-}
-video::cue(:future) {
-  color: gray;
-}
-video::-webkit-media-text-track-container b {
-  font-weight: bold;
-}
-video::-webkit-media-text-track-container u {
-  text-decoration: underline;
-}
-video::-webkit-media-text-track-container i {
-  font-style: italic;
 }
