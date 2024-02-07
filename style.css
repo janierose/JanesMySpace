@@ -163,7 +163,7 @@ Navigation Bar
 .navbar li::after {
   content: "|";
   margin: 0.33rem;
-  color: black;
+  color: white;
 }
 
 .navbar li:last-child::after {
@@ -419,7 +419,7 @@ User Network
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 475px;
   margin: center;
   height: 75px;
   border: 2px solid black;
@@ -709,7 +709,7 @@ video::-webkit-media-controls-panel {
   bottom: auto;
   height: 30px;
   /*Audio Background Color*/
-  background-color: rgb(102, 153, 204);
+  background-color: rgb(255, 105, 180);
   border-radius: 5px;
   /* The duration is also specified in MediaControlElements.cpp and LayoutTests/media/media-controls.js */
   transition: opacity 0.3s;
